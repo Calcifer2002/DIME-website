@@ -1,0 +1,210 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+  }
+  .wrapper-content h2{
+    color: white;
+    margin-left:22.5%;  
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    
+  }
+  .p{
+    font-family:'Oswald', sans-serif;
+  }
+  .h2s{
+margin-top: 10%;
+  }
+  .wrapper-content h3{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin-left:22.5%;
+
+  }
+  .wrapper-content h1{
+    color: white;
+    margin-top: 3%;
+    text-align:  left;
+    margin-left:22.5%;    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4vw;
+    line-height: 2vw;
+    position: relative;}
+    a {
+      text-decoration: none;
+     }
+     li {
+      list-style: none;
+     }
+     .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color:black;
+      height: -30%;
+     
+      padding: 0px;
+      color: white;
+     }
+     .nav-links a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: 'Open Sans', sans-serif;
+     }
+  
+     .logo {
+      font-size: 32px;
+     }
+     .menu {
+      display: flex;
+      gap: 1em;
+      font-size: 15px;
+     }
+     .menu li:hover {
+      border-bottom: 4PX solid #3dcece;
+     }
+     .menu li {
+      padding: 5px 14px;
+     }
+  #display{
+    height: auto;
+    float: left;
+    position: relative;
+    width: 10%;
+    height: 30%;
+    display: block;
+    
+    margin-left: 23%;
+    
+  }
+  #homepage{
+      padding: 3%;
+  }
+  #proto{
+   
+   
+  
+   height: 50em;
+   
+  float: right;
+  margin-top: 6%;
+  
+  left: 40%;
+  bottom: 450px;
+ 
+ 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  }
+  #stores{
+    width: 30%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+  }
+  
+  
+   footer {
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 7.3%;
+    padding: 2%;
+    font-size: 0.8vw;
+    background-color:white ;
+    width: 100%;
+  }
+  .footer-basic {
+    
+    color:#2c2d2e;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+    margin-top: -1%;
+  }
+  input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:black;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+    .menu li:hover {
+     display: inline-block;
+     background-color:#4c9e9e;
+     transition: 0.3s ease;
+    }
+    .menu li + li {
+     margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+    .hamburger {
+     display: block;
+    }
+    }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="why us.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Rubik&display=swap"
+    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4f4b38242.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="Images\Logo_1.png" alt="" width="130em" height = "70em"></div>
+        <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why us.html">Why Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+        <a href="pricing.html">Pricing</a>
+        </li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+        </div>
+        </ul>
+        </nav>
+       
+    <section>
+        <h1>Why TeenHub</h1>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    
+        <script>
+          var xValues = ["Severe", "No", "Low", "Mild", "Moderate"];
+          var yValues = [2.00, 3.20, 12.30, 60.10, 22.30];
+          var barColors = [
+            "#5ae2e3",
+            "#829d9e",
+            "#7c6d6a",
+            "#456a6b",
+            "#4db4b4"
+          ];
+          Chart.defaults.global.defaultFontColor = '#FFF';
+          new Chart("myChart", {
+            type: "doughnut",
+            data: {
+              labels: xValues,
+              datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+              }]
+            },
+            options: {
+              title: {
+                display: true,
+                text: "Levels of depression and anxiety among teens"
+    
+              }
+            }
+          });
+        </script>
+        <div class="para" style="padding: 2%; margin-top: -2%;">
+          <p>As teenagers, we have seen others who have experienced isolation or have had mental health issues before and
+            it might’ve been caused by different reasons such as moving to a new city or being an immigrant. Depression
+            is a growing problem in Ireland, about 10,000 adolescents are facing it as we speak.<br><br>
+            Teen Hub is a social media platform that allows teenagers to meet like minded people or attend events hosted
+            nearby, the aim of this app is to help people get out from their comfort zone and make new friends and offer
+            them the chance to discover new hobbies<br><br>Another study found that nearly
+            10,000 adolescents are struggling with mental health issues, who can be seen as potential customers in Ireland.
+            With our plans to expand our market and target in European countries, we can increase our sales by around 20%
+            according to the World Health Organisation, as mentioned 25% of the European population is affected by
+            Depression.
+          </p>
+        </div>
+      </section>
+      <div class="footer-basic">
+        <footer>
+          <!-- Yana's code: -->
+          <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+              href="#"><i class="icon ion-social-facebook"></i></a>
+          </div>
+    
+          <p class="copyright">TeenHub © 2022</p>
+        </footer>
+      </div>
+</body>
+</html>
